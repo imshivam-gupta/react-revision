@@ -1,5 +1,14 @@
 import React, { useReducer } from "react";
 
+// var x = 0;
+// const addToTotal = (x) =>{
+//     return x+20;
+// }
+// const decrementToTotal = (x) =>{
+//     x =  x-20;
+// }
+// x= addToTotal(x)
+
 const reducer = (state,action) => {
     switch(action.type){
         case 'increment':
@@ -9,15 +18,20 @@ const reducer = (state,action) => {
     }
 }
 
+/**
+ * 
+ * are pure function implement shouldcomponentupdate inbuilt(bydefault)
+like render only when diff aruments used
+ */
+
+
 //pure functions
 // 1. they should give smae output on prvidding same input varaible value each time
 // 2. they dont use any global variable
 
-// pure functions
-// higher order componens
+
 // useCallback hook
 // useMemo hook
-// API Calling
 // Virtual Dom and batch update
 
 
